@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-content {
+	margin-left: 5%; /* Push content to the right by the width of the sidebar */
+	min-height: 100vh; /* Optional: full height */
+	width: 95%; /* Take up remaining width */
+}
+.triangle-right {
+	position: absolute;
+	top: 50%;
+	right: 60px; 
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 30px solid #212E3F; 
+  }
+  .small-triangle-right {
+	position: absolute;
+	top: 50%;
+	right: 30px; 
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 25px solid #212E3F; 
+  }
+  
+
+  .custom-calendar {
+	height: 380px;
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-radius: 10px;
+	background-color: #f7f9fc;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #333;
+  }
+  
+  .custom-calendar .rbc-month-view {
+	border-collapse: separate;
+	border-spacing: 5px;
+	
+  }
+  .custom-calendar .rbc-off-range {
+	color: #b9c2cf;
+
+  }
+
+
+
+  .custom-calendar .rbc-day-bg {
+	
+	border: 1px solid #E2E8F0;
+	background-color: #f7faff;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom-calendar .rbc-day-bg:hover {
+	background-color: #e0f7fa;
+	color: #354b95;
+  }
+  
+  .custom-calendar .rbc-day-bg.rbc-today {
+	background-color: #e0f7fa;
+	color: #354b95
+  }
+  
+  .custom-calendar .rbc-header {
+	text-align: center;
+	font-size: 14px;
+	color: #444;
+  }
+  
+  .custom-calendar .rbc-header + .rbc-header {
+	border-left: none;
+  }
