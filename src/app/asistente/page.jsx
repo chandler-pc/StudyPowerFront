@@ -54,7 +54,7 @@ function AsistenciaPage() {
             <TipPreview tip={tip1} className="rounded-lg "></TipPreview>
             <TipPreview tip={tip2} className="rounded-lg "></TipPreview>
           </div>
-          <div>
+          /*<div>
             <p className="text-lg ">Insignias y Logros</p>
             <Link href="/logros">
               <div className="bg-slate-200 mt-8 rounded-md relative flex  items-center h-[120px]">
@@ -62,7 +62,7 @@ function AsistenciaPage() {
                 <span className="small-triangle-right"></span>
               </div>
             </Link>
-          </div>  
+          </div>  */
         </div>
 
         <div className="flex flex-col gap-8 md:w-3/5 w-full">
